@@ -1,20 +1,20 @@
 class Zap < Formula
   desc "Fast, encrypted peer-to-peer file transfers"
   homepage "https://zapper.cloud"
-  version "0.4.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/voidash/zapper.cloud/releases/download/v0.4.0/zap-darwin-arm64"
-      sha256 "0799af6a8fadbb1e6c2bc706a661af8f48dd3b123162235b938e228cc271571b"
+      url "https://github.com/voidash/zapper.cloud/releases/download/v0.6.0/zap-darwin-arm64"
+      sha256 "1165ad1c0b27f0bb1888140f3b2bba963fb30df820eb237e2420e0984131677f"
 
       def install
         bin.install "zap-darwin-arm64" => "zap"
       end
     else
-      url "https://github.com/voidash/zapper.cloud/releases/download/v0.4.0/zap-darwin-x86_64"
-      sha256 "579a9d9136cf3bc6157f50dbc8afacf73e5c5a4dec35ba40f886344b9c211d03"
+      url "https://github.com/voidash/zapper.cloud/releases/download/v0.6.0/zap-darwin-x86_64"
+      sha256 "6d565b4cbd704afe1915db26bbfc6046978e009d9b5c1ad8353c31385e195c6e"
 
       def install
         bin.install "zap-darwin-x86_64" => "zap"
@@ -24,15 +24,15 @@ class Zap < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/voidash/zapper.cloud/releases/download/v0.4.0/zap-linux-arm64"
-      sha256 "059ef1c4c956f14634305dddb6f6d882f23ab71f94b2b1833811741e0ff0307e"
+      url "https://github.com/voidash/zapper.cloud/releases/download/v0.6.0/zap-linux-arm64"
+      sha256 "642411ef0e9303a8ae1ddaee2a0179a0c0ebc1323c2a7c790308e16af62ae8b7"
 
       def install
         bin.install "zap-linux-arm64" => "zap"
       end
     else
-      url "https://github.com/voidash/zapper.cloud/releases/download/v0.4.0/zap-linux-x86_64"
-      sha256 "fdd9fae5859ee844f4414f05500eb13ed42f2bdf3edba010a7b35fe317b938aa"
+      url "https://github.com/voidash/zapper.cloud/releases/download/v0.6.0/zap-linux-x86_64"
+      sha256 "37557060106ab77486f06167148122ae91ef230e95d565e97c5bef9bfbb88a7e"
 
       def install
         bin.install "zap-linux-x86_64" => "zap"
